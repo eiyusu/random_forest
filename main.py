@@ -1,16 +1,8 @@
-# This is a sample Python script.
+# Biblioteca para ler matriz de dados --- pip install pyexcel
+import pyexcel as pe
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    dados = pe.get_array(file_name='dataset.xlsx')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(dados)
+
