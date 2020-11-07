@@ -11,10 +11,10 @@ def floresta(resultados, exames, lista_exames, alvo_inferencia):
 
     dados_treinamento, dados_teste, result_treinamento, result_teste = train_test_split(exames,
                                                                                         resultados,
-                                                                                        test_size=1000,
+                                                                                        test_size=1150,
                                                                                         random_state=60)
 
-    modelo = RandomForestClassifier(n_estimators=300,
+    modelo = RandomForestClassifier(n_estimators=75,
                                     bootstrap=True,
                                     max_features='sqrt')
     modelo.fit(dados_treinamento, result_treinamento)
